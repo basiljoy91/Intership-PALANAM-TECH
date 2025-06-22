@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Web Safety Analyzer",
+  "version": "1.0",
+  "description": "Classifies webpage content on load",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Safety Classifier</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #333;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .safe { background-color: #d4edda; color: #155724; }
+        .sensitive { background-color: #fff3cd; color: #856404; }
+        .malicious { background-color: #f8d7da; color: #721c24; }
+        .misleading { background-color: #e2e3e5; color: #383d41; }
+        .error { background-color: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <h1>Content Safety Classifier</h1>
+    <p>This extension automatically analyzes page content for safety.</p>
+    <div id="status" class="status safe">Ready to analyze pages</div>
+    <script src="popup.js"></script>
+</body>
+</html>

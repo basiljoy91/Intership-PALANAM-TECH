@@ -1,0 +1,32 @@
+# Ignore virtual environments
+.venv/
+.venev/
+
+# Ignore dataset and model binaries
+*.csv
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.dylib
+*.so
+*.pb
+*.onnx
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+
+# Ignore VS Code settings (if used)
+.vscode/
